@@ -33,7 +33,7 @@ memory = ConversationSummaryBufferMemory(llm = OpenAI(), memory_key="chat_histor
 
 openai = ChatOpenAI(model_name="gpt-4-0613")
 
-client = MongoClient('mongodb+srv://vamsinadh2000:psVlg3Q0JGiEn0eD@agelessaide.cvnocpf.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('')
 chat_db = client['chatbot_db']  # You can name your database
 conversations = chat_db['conversations']  # Creating a collection to store conversations
 papers_collection = chat_db['research_papers']
