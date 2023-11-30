@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/form.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='/css/anti-aging.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/form.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Log In</h2>
+      <form name="login_form">
+        <div class="input-box">
+          <input type="email" name="email" placeholder="Enter your email *" required>
+        </div>
+        <div class="input-box">
+          <input type="password" name="password" placeholder="Enter your password *" required>
+        </div>
+        <p class="error error--hidden"></p>
+        <div class="input-box button">
+          <input type="submit" value="LOGIN">
+        </div>
+
+        <div class="input-box button">
+          <input type="submit" value ="SKIP" value="SKIP" onclick="location.href='/skip-login';">
+
+        </div>
+      </form>
+        
+      <div class="text">
+        <h3>Don't have an account? <a href="/signup/">Sign up now</a></h3>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/forms.js') }}"></script>
+
+  </body>
+</html>

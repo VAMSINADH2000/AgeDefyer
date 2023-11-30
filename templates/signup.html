@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/form.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='/css/anti-aging.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/form.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Create an Account</h2>
+      <form name="signup_form">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Enter your name *" required>
+        </div>
+        <div class="input-box">
+          <input type="email" name="email" placeholder="Enter your email *" required>
+        </div>
+        <div class="input-box">
+          <input type="text" name="phone" placeholder="Enter your phone (optional)" >
+        </div>
+        <div class="input-box">
+          <input type="password" name="password" placeholder="Enter your password *" required>
+        </div>
+        <p class="error error--hidden"></p>
+        <div class="input-box button">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+      <script>
+        console.log("vamsi")
+      </script>
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/forms.js') }}"></script>
+
+  </body>
+</html>

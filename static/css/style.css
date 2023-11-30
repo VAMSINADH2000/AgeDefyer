@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;    font-family: 'Inconsolata', monospace;
+    background-image: url('bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: #4b8c6e;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 2px 2px 4px #a0a39c;
+    /* border-bottom: 4px solid navy; */
+    padding-bottom: 10px;
+  }
+  
+
+.container {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(17, 17, 17, 0.1);
+}
+
+.paper-link {
+  font-weight: normal;
+}
+
+#chat-box {
+    padding: 15px;
+    background-color: var(--color2);
+    border-radius: 5px;
+}
+
+
+.btn-secondary {
+    background-color: #4b8c6e;
+    border-color:#4b8c6e;
+    font-weight: bold;
+}
+
+p {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* p[style*="color:green"] {
+    background-color: #e4f4e7;
+}
+
+p[style*="color:blue"] {
+    background-color: #e4ebf4;
+} */
+
+#send-container {
+    display: flex;
+    gap: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+}
+
+
+
+
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+.title{
+    text-decoration: none; 
+  }
+
+  a {
+    text-decoration: none; /* Removes the underline */
+    color: #0077cc; /* Sets the text color */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  a:hover {
+    color: #0055a3; /* Changes color on hover */
+  }
+
+
+  
+  a:active {
+    color: #003366; /* Changes color when the link is active or being clicked */
+  }
+  
+
+
+  .header-container a:hover{
+    text-decoration: none; 
+
+  }
+  .spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #4b8c6e;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.expanding-textarea {
+  width: 100%;
+  min-height: 20px;
+  overflow: hidden;
+  resize: none; /* Disable manual resizing */
+  position: absolute;
+  bottom: 0; /* Align to the bottom of the container */
+}
+
+.header-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center
+}
+.header-logo {
+  height: 100px;
+  width: 150px; /* Adjust the width as needed */
+  border-radius: 100%;
+}
+
+.header-title {
+  color: #4b8c6e;
+
+} 
+
+.version {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .version {
+      text-align: left;
+      margin-top: 10px;
+  }
+}
+
+
+.welcome-message {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Styles for aligning divs */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;  /* Relative to its own initial position */
+}
+
+.top-right-div {
+    position: absolute;  /* Absolute position */
+    top: 0;  /* Align to the top */
+    right: 0;  /* Align to the right */
+}
+
+/* Add a new class to align the div at the top-right corner */
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
